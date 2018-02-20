@@ -1,0 +1,9 @@
+login name:exam
+User name :exam
+Current Shell :/bin/bash
+Home directory :/home/exam
+Operating System :linux-gnu
+Current Path setting :/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+Current working directory:/home/exam/C4B40
+No.of users currently logged in:3
+
