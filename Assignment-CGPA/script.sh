@@ -23,6 +23,7 @@ awk -i inplace '{sum=0; sum=sum+(($2)*4 + ($3)*4 + ($4)*3 + ($5)*3 + ($6)*3 + ($
 awk -i inplace '{sum=0; sum=sum+(($2)*4 + ($3)*4 + ($4)*3 + ($5)*1 + ($6)*1 + ($7)*4 + ($8)*3 + ($9)*3 + ($10)*1); {printf("%s %.2f\n",$1,sum/24);}}' 2CS.txt
 join 1CS.txt 2CS.txt|paste>S1S2.txt
 awk '{sum=0; sum=sum+($2+$3); {printf("%s %.2f\n",$1,sum/2);}}' S1S2.txt>SGPA.txt 
+wget "http://14.139.184.212/ask/c4b/c4b.txt" C4B.txt
 join -1 1 -2 6 SGPA.txt C4B.txt|paste>temp.txt		#to join cgpa and class list 
 cut -d' ' -f1,2,8- temp.txt|paste>CGPA.txt
 rm temp.txt
