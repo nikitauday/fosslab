@@ -1,6 +1,6 @@
 Assignment - 1 :
 
-    -Download results of S1, S2
+-Download results of S1, S2
     -Convert to text file
     -Sort out CS results
     -Calculate SGPA of S1, S2
@@ -10,7 +10,7 @@ using shell scripting.
 
 Approach :
 
-    -Downloaded results from https://ktu.edu.in/eu/res/viewExamResults.htm?examDefIdEnr=LpBmCci4xl%2BUU1ElM5Ta7ur7NwV9ySMu8tz0hktxfio%3D&type=33X30ZkQBhbZtfM52WojhuPuSdt1pxpni%2FaM98VfPH4%3D&publishId=pCMWMQ%2BL4VDY%2BvpE2LT5AZ7kbSeO3hZL1ABW%2BR64%2FbY%3D
+   -Downloaded results from https://ktu.edu.in/eu/res  /viewExamResults.htm?examDefIdEnr=LpBmCci4xl%2BUU1ElM5Ta7ur7NwV9ySMu8tz0hktxfio%3D&type=33X30ZkQBhbZtfM52WojhuPuSdt1pxpni%2FaM98VfPH4%3D&publishId=pCMWMQ%2BL4VDY%2BvpE2LT5AZ7kbSeO3hZL1ABW%2BR64%2FbY%3D
       and https://ktu.edu.in/eu/res/viewExamResults.htm?examDefIdEnr=zs9fqD1WgQBNULcEU3RHXkxf5ytthg%2BjxnA6VxJX1U8%3D&type=SrSoPQX151njZBF7q2nJCO9gXCagIo7Rm%2F3K7TCAaMM%3D&publishId=kwVuXW6j238IkZiTwC2%2FolddacqX%2FHXt7Z2oFUyqJIs%3D
     -Converted downloaded PDFs to text files.
     -Extracted the results from the two text files above.
