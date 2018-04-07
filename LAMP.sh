@@ -1,0 +1,52 @@
+#Since we are using a sudo command, these operations get executed with root privileges. It will ask you for your regular user's password to verify your intentions.
+
+
+1.INSTALLING APACHE AND ALLOW FIREWALL
+sudo apt-get update     #ubuntu package manager apt is used for installing 
+sudo apt-get install apache2
+sudo apache2ctl configtest      #add a single line to the /etc/apache2/apache2.conf file to suppress a warning message
+sudo nano /etc/apache2/apache2.conf
+        ServerName #server_domain_or_IP         #Set Global ServerName to Suppress Syntax Warnings
+sudo apache2ctl configtest
+sudo systemctl restart apache2          #Restart Apache to implement your changes
+sudo ufw app list                       #Adjust the Firewall to Allow Web Traffic
+sudo ufw app info "Apache Full"         #If you look at the Apache Full profile, it should show that it enables traffic to ports 80 and 443
+sudo ufw allow in "Apache Full"         #Allow incoming traffic for this profile
+#http://your_server_IP_address           #verify that everything went as planned by visiting your server's public IP address in your web browser 
+#ifconfig \awk '/net addr/{print substr($2,6)}'         #to find ip address
+
+
+2.INSTALLING MYSQL
+
+#Note: In this case, you do not have to run sudo apt-get update prior to the command. This is because we recently ran it in the commands above to install Apache. The p$
+
+sudo apt-get install mysql-server
+mysql_secure_installation       #starting interactive script    (running a simple security script that will remove some dangerous defaults and lock down access to our $
+
+#Answer y for yes, or anything else to continue without enabling.
+
+3.INSTALLING PHP
+sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+sudo nano /etc/apache2/mods-enabled/dir.conf
+sudo systemctl restart apache2
+sudo systemctl status apache2
+apt-cache search php- | less                                    #installing phpmodules
+apt-cache show #package_name                    #to get onfo abput each package
+sudo apt-get install #package_name1 #package_name2 ....                 #to install the package
+
+
+4: Test PHP Processing on your Web Server
+sudo nano /var/www/html/info.php        #This will open a blank file. We want to put the following text, which is valid PHP code, inside the file:
+
+#info.php
+
+#<?php
+#phpinfo();
+#?>
+
+http://your_server_IP_address/info.php          #to test whether web browser can correctly display the content genrated by php script
+
+sudo rm /var/www/html/info.php                  #remove this file after this test to prevent  giving information about your server to unauthorized users.
+    
+
+
