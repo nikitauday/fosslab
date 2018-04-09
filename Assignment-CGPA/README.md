@@ -14,17 +14,11 @@ Approach :
       and https://ktu.edu.in/eu/res/viewExamResults.htm?examDefIdEnr=zs9fqD1WgQBNULcEU3RHXkxf5ytthg%2BjxnA6VxJX1U8%3D&type=SrSoPQX151njZBF7q2nJCO9gXCagIo7Rm%2F3K7TCAaMM%3D&publishId=kwVuXW6j238IkZiTwC2%2FolddacqX%2FHXt7Z2oFUyqJIs%3D
       
     -Converted downloaded PDFs to text files.
-    
     -Extracted the results from the two text files above.
-    
     -Removed newlines, spaces, tabs, nulls etc.
-    
     -Added newlines to each substring 'MDL' in both text files.
-    
     -Added newlines to each substring 'CY100' in S2.txt
-    
     -Added newlines to each substring 'MA101' in S1.txt
-    
     -Replaced grades with grade points corresponding to each subject in line with roll no in both text files.    
     -Removed each subject name leaving only grade point of each subject in line with roll no in both text files.
     -Summed up product of grade point and the credit corresponding to the subject. 
