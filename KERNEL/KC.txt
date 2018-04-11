@@ -1,0 +1,17 @@
+wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.16.1.tar.xz	//Download linux-.16.tar.xz
+ 
+tar -xvJf linux-4.16.tar.xz     //to untar the kernel source file for compilation
+cd linux-4.16.tar.xz
+sudo apt-get install libncurses5-dev libncursesw5-dev //for make menuconfig command
+sudo apt-get install libssl-dev
+make menuconfig     
+
+make        //compiling main kernel
+
+make modules        //compile kernel modules
+
+sudo make modules_install       //install kernel modules
+
+sudo make install       //installing new kernel on the system
+
+reboot      //to use new kernel which was compiled
