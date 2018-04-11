@@ -1,5 +1,5 @@
 #!/user/bin/perl-w
-print "I AM NIKITA UDAY";
+print "I AM NIKITA UDAY\n";
 print	 	"Whitespaces and tabs don't matter\n";
 $a = 10;
 print "Variables don't have specifiable datatypes, only Scalars Arrays Hashes\n";
